@@ -4,6 +4,7 @@
     package="com.example.hanaalalawi.nasachallenge">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,24 +13,30 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".DisasterDetails"
             android:label="Disaster"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".PrepreationActivity" />
-        <activity android:name=".BeforeFragment"
-            android:label="Before Disaster"/>
-        <activity android:name=".DuringFragment"
-            android:label="During Disaster"/>
+        <activity
+            android:name=".BeforeFragment"
+            android:label="Before Disaster" />
+        <activity
+            android:name=".DuringFragment"
+            android:label="During Disaster" />
         <activity
             android:name=".AfterFragment"
             android:label="After Disaster" />
+        <activity android:name=".Splash"
+            android:label=" ">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
