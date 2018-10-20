@@ -25,7 +25,7 @@ public class AfterFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         LayoutInflater lf = getActivity().getLayoutInflater();
-        View v = lf.inflate(R.layout.activity_before_fragment, container, false);
+        View v = lf.inflate(R.layout.activity_after_fragment, container, false);
 
         bundle = getActivity().getIntent().getExtras();
         disTitle = bundle.getString("dis_name");

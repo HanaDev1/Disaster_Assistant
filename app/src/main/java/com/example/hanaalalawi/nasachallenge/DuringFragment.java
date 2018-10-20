@@ -24,7 +24,7 @@ public class DuringFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         LayoutInflater lf = getActivity().getLayoutInflater();
-        View v = lf.inflate(R.layout.activity_before_fragment, container, false);
+        View v = lf.inflate(R.layout.activity_during_fragment, container, false);
 
         bundle = getActivity().getIntent().getExtras();
         disTitle = bundle.getString("dis_name");
@@ -38,7 +38,9 @@ public class DuringFragment extends Fragment {
         titleB = (TextView) v.findViewById(R.id.title);
         plan8User = (TextView) v.findViewById(R.id.userPlanResult);
         userPlan = (EditText) v.findViewById(R.id.userPlan);
+
         save = (Button) v.findViewById(R.id.save);
+
         plan1check = (ImageView) v.findViewById(R.id.circle1);
         plan2check = (ImageView) v.findViewById(R.id.circle2);
         plan3check = (ImageView) v.findViewById(R.id.circle3);
@@ -111,7 +113,6 @@ public class DuringFragment extends Fragment {
             });
 
         }
-
         return v;
     }
 }

@@ -110,7 +110,8 @@
             android:layout_height="100dp"
             android:orientation="vertical"
             style="@style/textViewStyle"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/lineareme">
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"

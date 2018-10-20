@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.hanaalalawi.nasachallenge">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,12 +21,15 @@
         <activity
             android:name=".DisasterDetails"
             android:label="Disaster"
-            android:parentActivityName=".MainActivity"
-            tools:targetApi="jelly_bean" />
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".PrepreationActivity" />
-        <activity android:name=".BeforeFragment" />
-        <activity android:name=".DuringFragment" />
-        <activity android:name=".AfterFragment"></activity>
+        <activity android:name=".BeforeFragment"
+            android:label="Before Disaster"/>
+        <activity android:name=".DuringFragment"
+            android:label="During Disaster"/>
+        <activity
+            android:name=".AfterFragment"
+            android:label="After Disaster" />
     </application>
 
 </manifest>

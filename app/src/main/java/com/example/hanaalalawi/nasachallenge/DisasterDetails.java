@@ -1,7 +1,11 @@
 package com.example.hanaalalawi.nasachallenge;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,9 +18,10 @@ public class DisasterDetails extends AppCompatActivity {
     TextView disDescription, beforeDis, afterDis, duringDis, title;
     ImageView disImage;
     Bundle bundle;
-    LinearLayout linearbefore;
+    LinearLayout linearbefore, linearAfter, linearDuring, linearEme;
     String discerption, disTitle;
     String img;
+
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +35,9 @@ public class DisasterDetails extends AppCompatActivity {
         disImage = (ImageView) findViewById(R.id.disImg);
         title = (TextView) findViewById(R.id.title);
         linearbefore = (LinearLayout) findViewById(R.id.linearbefore);
+        linearAfter = (LinearLayout) findViewById(R.id.linearafter);
+        linearDuring = (LinearLayout) findViewById(R.id.linearduring);
+        linearEme = (LinearLayout) findViewById(R.id.lineareme);
 
         bundle = getIntent().getExtras();
         disTitle = bundle.getString("dis_name");
@@ -38,13 +46,49 @@ public class DisasterDetails extends AppCompatActivity {
         title.setText(disTitle);
         disImage.setImageResource(Integer.parseInt(img));
 
-        beforeDis.setText("Before "+disTitle);
-        duringDis.setText("During "+disTitle);
-        afterDis.setText("After "+disTitle);
+        beforeDis.setText("Before " + disTitle);
+        duringDis.setText("During " + disTitle);
+        afterDis.setText("After " + disTitle);
 
-        if(disTitle.equals("Earthquakes")){
+        if (disTitle.equals("Earthquakes")) {
             disDescription.setText(R.string.earthquake);
             linearbefore.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String name = disTitle;
+                    Intent before = new Intent(DisasterDetails.this, PrepreationActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("dis_name", name);
+                    before.putExtras(bundle);
+                    before.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);//clear all activities before the signin
+                    startActivity(before);
+                }
+            });
+            linearEme.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String name = disTitle;
+                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "911"));
+                    if (ActivityCompat.checkSelfPermission(DisasterDetails.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+
+                        return;
+                    }
+                    startActivity(intent);
+                }
+            });
+            linearAfter.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String name = disTitle;
+                    Intent before = new Intent(DisasterDetails.this,PrepreationActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("dis_name", name);
+                    before.putExtras(bundle);
+                    before.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);//clear all activities before the signin
+                    startActivity(before);
+                }
+            });
+            linearDuring.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     String name = disTitle;
