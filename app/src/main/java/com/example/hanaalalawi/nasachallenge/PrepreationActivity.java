@@ -33,7 +33,7 @@ public class PrepreationActivity extends AppCompatActivity {
                             selectedFragment = new DuringFragment();
                             break;
                         case R.id.nav_after:
-                            selectedFragment = new Fragment();
+                            selectedFragment = new AfterFragment();
                             break;
 
                     }
