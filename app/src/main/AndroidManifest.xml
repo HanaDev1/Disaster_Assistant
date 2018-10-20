@@ -22,6 +22,10 @@
             android:label="Disaster"
             android:parentActivityName=".MainActivity"
             tools:targetApi="jelly_bean" />
+        <activity android:name=".PrepreationActivity" />
+        <activity android:name=".BeforeFragment" />
+        <activity android:name=".DuringFragment" />
+        <activity android:name=".AfterFragment"></activity>
     </application>
 
 </manifest>

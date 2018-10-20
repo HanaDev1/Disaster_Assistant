@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_before"
+        android:icon="@drawable/before"
+        android:title="Before"/>
+    <item
+        android:id="@+id/nav_during"
+        android:icon="@drawable/during"
+        android:title="During"/>
+    <item
+        android:id="@+id/nav_after"
+        android:icon="@drawable/after"
+        android:title="After"/>
+</menu>

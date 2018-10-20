@@ -1,11 +1,20 @@
 <resources>
-    <string name="app_name">NasaChallenge</string>
-        <string name="action_settings">Settings</string>
-        <string name="action_add_favourite">Add to Favourites</string>
-        <string name="action_play_next">Play Next</string>
-        <string name="backdrop_title">LOVE MUSIC</string>
-        <string name="backdrop_subtitle">This season top 20 albums</string>
+    <string name="app_name">Disaster Instructions</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_add_favourite">Add to Favourites</string>
+    <string name="action_play_next">Play Next</string>
+    <string name="backdrop_title">LOVE MUSIC</string>
+    <string name="backdrop_subtitle">This season top 20 albums</string>
     <string name="earthquake">Earthquakes are the shaking, rolling or sudden shock of the earth’s surface. They are the Earth\'s natural means of releasing stress More than a million earthquakes rattle the world each year</string>
     <string name="fire">A wildfire also known as a wildland fire, forest fire, vegetation fire, grass fire, peat fire, bushfire (in Australia), or hill fire is an uncontrolled fire often occurring in wildland areas, but which can also consume houses or agricultural resources. Wildfires often begin unnoticed, but they spread quickly igniting brush, trees and homes.</string>
     <string name="flood">A flood results from days of heavy rain and/or melting snows, when rivers rise and go over their banks.</string>
+    <string name="Hurricane">A hurricane is a huge storm! It can be up to 600 miles across and have strong winds spiraling inward and upward at speeds of 75 to 200 mph. Each hurricane usually lasts for over a week, moving 10-20 miles per hour over the open ocean</string>
+    <string name="Volcano">A volcano is a mountain that opens downward to a pool of molten rock below the surface of the earth. When pressure builds up, eruptions occur Gases and rock shoot up through the opening and spill over or fill the air with lava fragments</string>
+    <string name="beforeep1">Remember! Emergency preparedness can save lives.</string>
+    <string name="beforeep2">Charge your phone to use the app and to call emergency.</string>
+    <string name="beforeep3">Choose a safe place in every room. It’s best to get under a sturdy piece of furniture like a table or a desk where nothing can fall on you.</string>
+    <string name="beforeep4">Practice DROP, COVER AND HOLD ON!</string>
+    <string name="beforeep5">Drop under something sturdy, hold on, and protect your eyes by pressing your face against your arm.</string>
+    <string name="beforeep6">If you live in an earthquake prone area, bolt tall furniture to the wall and install strong latches to cupboards.</string>
+    <string name="beforeep7">Prepare a first aid kit for your home By taking special precautions and checking for hazards before a disaster strikes, you will be much more likely to stay safe</string>
 </resources>

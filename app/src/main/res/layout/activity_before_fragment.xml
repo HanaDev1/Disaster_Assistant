@@ -1,0 +1,219 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/parent_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disaster steps"
+        android:textSize="26sp"
+        android:id="@+id/title"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/circlrec"
+            android:layout_marginRight="16dp"
+            android:id="@+id/circlrec"/>
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/step1"
+            android:hint="step 1"
+            android:layout_weight="1"
+            style="@style/textViewStyle"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/circlrec"
+            android:layout_marginRight="16dp"
+            android:id="@+id/circle2"
+            android:visibility="visible"/>
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/step2"
+            android:hint="step 2"
+            android:visibility="visible"
+            android:layout_weight="1"
+            style="@style/textViewStyle"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/circlrec"
+            android:layout_marginRight="16dp"
+            android:id="@+id/circle3"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/step3"
+            android:hint="step 3"
+            android:layout_weight="1"
+            android:visibility="visible"
+            style="@style/textViewStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/circlrec"
+            android:layout_marginRight="16dp"
+            android:id="@+id/circle4"
+            android:visibility="visible"/>
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/step4"
+            android:hint="step 4"
+            android:layout_weight="1"
+            android:visibility="visible"
+            style="@style/textViewStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/circlrec"
+            android:layout_marginRight="16dp"
+            android:id="@+id/circle5"
+            android:visibility="visible"/>
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/step5"
+            android:hint="step 5"
+            android:layout_weight="1"
+            android:visibility="visible"
+            style="@style/textViewStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/circlrec"
+            android:layout_marginRight="16dp"
+            android:id="@+id/circle6"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/step6"
+            android:hint="step 6"
+            android:layout_weight="1"
+            android:visibility="visible"
+            style="@style/textViewStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/circlrec"
+            android:layout_marginRight="16dp"
+            android:id="@+id/circle7"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/step7"
+            android:hint="step 7"
+            android:layout_weight="1"
+            android:visibility="visible"
+            style="@style/textViewStyle"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userPlanResult"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/userPlan"
+        android:hint="write Your plan"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        style="@style/textViewStyle"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/save"
+            android:text="Save"
+            style="@style/textViewStyle"
+            android:layout_marginTop="30dp"/>
+</LinearLayout>
+
+
+
+    </LinearLayout></ScrollView>
