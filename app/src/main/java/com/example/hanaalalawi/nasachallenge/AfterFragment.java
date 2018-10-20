@@ -48,6 +48,7 @@ public class AfterFragment extends Fragment {
         plan6check = (ImageView) v.findViewById(R.id.circle6);
         plan7check = (ImageView) v.findViewById(R.id.circle7);
 
+        plan8User.setVisibility(View.GONE);
 
         titleB.setText(disTitle);
 
@@ -84,30 +85,16 @@ public class AfterFragment extends Fragment {
                     plan4check.setImageResource(R.drawable.circle);
                 }
             });
-            plan5check.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    plan5check.setImageResource(R.drawable.circle);
-                }
-            });
-            plan6check.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    plan6check.setImageResource(R.drawable.circle);
-                }
-            });
-            plan7check.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    plan7check.setImageResource(R.drawable.circle);
-                }
-            });
+            plan5check.setVisibility(View.GONE);
+            plan6check.setVisibility(View.GONE);
+            plan7check.setVisibility(View.GONE);
 
             save.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     String userplanstr = userPlan.getText().toString();
                     plan8User.setText(userplanstr);
+                    plan8User.setVisibility(View.VISIBLE);
                 }
             });
 

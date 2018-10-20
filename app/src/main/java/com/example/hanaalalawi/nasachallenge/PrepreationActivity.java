@@ -35,7 +35,6 @@ public class PrepreationActivity extends AppCompatActivity {
                         case R.id.nav_after:
                             selectedFragment = new AfterFragment();
                             break;
-
                     }
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_place,selectedFragment).commit();
                     return true;

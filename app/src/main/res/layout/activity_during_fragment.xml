@@ -190,13 +190,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/userPlanResult"
-            style="@style/textViewStyle"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            style="@style/textViewStyle"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"/>
+
             <EditText
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/userPlan"
                 android:hint="write Your own plan"
@@ -211,8 +210,10 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/save"
                 android:text="Save"
-                android:layout_marginTop="30dp"/>
-        </LinearLayout>
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"/>
+
 
 
 

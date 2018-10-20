@@ -49,7 +49,7 @@ public class BeforeFragment extends Fragment {
         plan5check = (ImageView) v.findViewById(R.id.circle5);
         plan6check = (ImageView) v.findViewById(R.id.circle6);
         plan7check = (ImageView) v.findViewById(R.id.circle7);
-
+        plan8User.setVisibility(View.GONE);
 
         titleB.setText(disTitle);
 
@@ -110,6 +110,7 @@ public class BeforeFragment extends Fragment {
                 public void onClick(View v) {
                     String userplanstr = userPlan.getText().toString();
                     plan8User.setText(userplanstr);
+                    plan8User.setVisibility(View.VISIBLE);
                 }
             });
 
