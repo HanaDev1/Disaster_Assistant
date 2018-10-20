@@ -17,4 +17,14 @@
     <string name="beforeep5">Drop under something sturdy, hold on, and protect your eyes by pressing your face against your arm.</string>
     <string name="beforeep6">If you live in an earthquake prone area, bolt tall furniture to the wall and install strong latches to cupboards.</string>
     <string name="beforeep7">Prepare a first aid kit for your home By taking special precautions and checking for hazards before a disaster strikes, you will be much more likely to stay safe</string>
+    <string name="duringep1">DROP, COVER AND HOLD ON!</string>
+    <string name="duringep2">Stay indoors until the shaking stops.</string>
+    <string name="durinep3">Stay away from windows.</string>
+    <string name="duringep4">If you’re in bed, hold on and stay there, protecting your head with a pillow.</string>
+    <string name="duringep5">If you’re outdoors, find a clear spot away from buildings, trees and power lines. Then, drop to the ground.</string>
+    <string name="duringep6">If you’re in a car, slow down and drive to a safe place. Stay in the car until the shaking stops.</string>
+    <string name="afterep1">Check for injuries.</string>
+    <string name="afterep2">Inspect your home for damage.</string>
+    <string name="afterep3">Eliminate fire hazards, so turn off the gas if you think its leaking. Expect aftershocks.</string>
+    <string name="afterep4">Each time you feel one, DROP, COVER AND HOLD ON.</string>
 </resources>

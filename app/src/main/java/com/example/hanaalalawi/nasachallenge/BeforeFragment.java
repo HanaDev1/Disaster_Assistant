@@ -12,10 +12,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class BeforeFragment extends Fragment {
     TextView plan1, plan2, plan3, plan4, plan5, plan6, plan7, plan8User, titleB;
+    ImageView plan1check, plan2check, plan3check, plan4check, plan5check, plan6check, plan7check;
     EditText userPlan;
     Bundle bundle;
     String disTitle;
@@ -24,11 +26,12 @@ public class BeforeFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.activity_before_fragment, container, false);
+        LayoutInflater lf = getActivity().getLayoutInflater();
+        View v = lf.inflate(R.layout.activity_before_fragment, container, false);
 
         bundle = getActivity().getIntent().getExtras();
         disTitle = bundle.getString("dis_name");
-        plan1 = (TextView) v.findViewById(R.id.step1);                                       hdsnbds
+        plan1 = (TextView) v.findViewById(R.id.step1);
         plan2 = (TextView) v.findViewById(R.id.step2);
         plan3 = (TextView) v.findViewById(R.id.step3);
         plan4 = (TextView) v.findViewById(R.id.step4);
@@ -39,6 +42,14 @@ public class BeforeFragment extends Fragment {
         plan8User = (TextView) v.findViewById(R.id.userPlanResult);
         userPlan = (EditText) v.findViewById(R.id.userPlan);
         save = (Button) v.findViewById(R.id.save);
+        plan1check = (ImageView) v.findViewById(R.id.circle1);
+        plan2check = (ImageView) v.findViewById(R.id.circle2);
+        plan3check = (ImageView) v.findViewById(R.id.circle3);
+        plan4check = (ImageView) v.findViewById(R.id.circle4);
+        plan5check = (ImageView) v.findViewById(R.id.circle5);
+        plan6check = (ImageView) v.findViewById(R.id.circle6);
+        plan7check = (ImageView) v.findViewById(R.id.circle7);
+
 
         titleB.setText(disTitle);
 
@@ -51,6 +62,49 @@ public class BeforeFragment extends Fragment {
             plan6.setText(R.string.beforeep6);
             plan7.setText(R.string.beforeep7);
 
+            plan1check.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    plan1check.setImageResource(R.drawable.circle);
+                }
+            });
+            plan2check.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    plan2check.setImageResource(R.drawable.circle);
+                }
+            });
+            plan3check.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    plan3check.setImageResource(R.drawable.circle);
+                }
+            });
+            plan4check.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    plan4check.setImageResource(R.drawable.circle);
+                }
+            });
+            plan5check.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    plan5check.setImageResource(R.drawable.circle);
+                }
+            });
+            plan6check.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    plan6check.setImageResource(R.drawable.circle);
+                }
+            });
+            plan7check.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    plan7check.setImageResource(R.drawable.circle);
+                }
+            });
+
             save.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -59,78 +113,9 @@ public class BeforeFragment extends Fragment {
                 }
             });
 
-        } else if (disTitle.equals("Fires")) {
-            plan1.setText(R.string.beforeep1);
-            plan1.setText("Charge your phone to use the app and to call emergency.");
-            plan2.setText("Choose a safe place in every room. It’s best to get under a sturdy piece of furniture like a table or a desk where nothing can fall on you. ");
-            plan3.setText("Practice DROP, COVER AND HOLD ON!");
-            plan4.setText("Drop under something sturdy, hold on, and protect your eyes by pressing your face against your arm.  ");
-            plan5.setText("If you live in an earthquake prone area, bolt tall furniture to the wall and install strong latches to cupboards. ");
-            plan6.setText("Remember! Emergency preparedness can save lives. ");
-            plan7.setText("Prepare a first aid kit for your home By taking special precautions and checking for hazards before a disaster strikes, you will be much more likely to stay safe");
-
-            save.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    String userplanstr = userPlan.getText().toString();
-                    plan8User.setText(userplanstr);
-                }
-            });
-        } else if (disTitle.equals("Floods")) {
-            plan1.setText(R.string.beforeep1);
-            plan1.setText("Charge your phone to use the app and to call emergency.");
-            plan2.setText("Choose a safe place in every room. It’s best to get under a sturdy piece of furniture like a table or a desk where nothing can fall on you. ");
-            plan3.setText("Practice DROP, COVER AND HOLD ON!");
-            plan4.setText("Drop under something sturdy, hold on, and protect your eyes by pressing your face against your arm.  ");
-            plan5.setText("If you live in an earthquake prone area, bolt tall furniture to the wall and install strong latches to cupboards. ");
-            plan6.setText("Remember! Emergency preparedness can save lives. ");
-            plan7.setText("Prepare a first aid kit for your home By taking special precautions and checking for hazards before a disaster strikes, you will be much more likely to stay safe");
-
-            save.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    String userplanstr = userPlan.getText().toString();
-                    plan8User.setText(userplanstr);
-                }
-            });
-        } else if (disTitle.equals("Hurricane")) {
-            plan1.setText(R.string.beforeep1);
-            plan1.setText("Charge your phone to use the app and to call emergency.");
-            plan2.setText("Choose a safe place in every room. It’s best to get under a sturdy piece of furniture like a table or a desk where nothing can fall on you. ");
-            plan3.setText("Practice DROP, COVER AND HOLD ON!");
-            plan4.setText("Drop under something sturdy, hold on, and protect your eyes by pressing your face against your arm.  ");
-            plan5.setText("If you live in an earthquake prone area, bolt tall furniture to the wall and install strong latches to cupboards. ");
-            plan6.setText("Remember! Emergency preparedness can save lives. ");
-            plan7.setText("Prepare a first aid kit for your home By taking special precautions and checking for hazards before a disaster strikes, you will be much more likely to stay safe");
-
-            save.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    String userplanstr = userPlan.getText().toString();
-                    plan8User.setText(userplanstr);
-                }
-            });
-        } else if (disTitle.equals("Volcano")) {
-            plan1.setText(R.string.beforeep1);
-            plan1.setText("Charge your phone to use the app and to call emergency.");
-            plan2.setText("Choose a safe place in every room. It’s best to get under a sturdy piece of furniture like a table or a desk where nothing can fall on you. ");
-            plan3.setText("Practice DROP, COVER AND HOLD ON!");
-            plan4.setText("Drop under something sturdy, hold on, and protect your eyes by pressing your face against your arm.  ");
-            plan5.setText("If you live in an earthquake prone area, bolt tall furniture to the wall and install strong latches to cupboards. ");
-            plan6.setText("Remember! Emergency preparedness can save lives. ");
-            plan7.setText("Prepare a first aid kit for your home By taking special precautions and checking for hazards before a disaster strikes, you will be much more likely to stay safe");
-
-            save.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    String userplanstr = userPlan.getText().toString();
-                    plan8User.setText(userplanstr);
-                }
-            });
         }
 
-
-        return inflater.inflate(R.layout.activity_before_fragment, container, false);
+        return v;
     }
 }
 
